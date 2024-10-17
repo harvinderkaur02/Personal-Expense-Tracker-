@@ -4,11 +4,13 @@ The Personal Expense Tracker is a Python-based project designed to help users ef
 # Key Features :
 1. Add Expenses: Users can input expenses by specifying the amount, category (e.g., Food, Transport, Entertainment), and date (auto-generated if not provided).
 2. View Summaries: Provides three types of summaries:
+   
                             .  Total Spending by Category: Shows how much has been spent in each category.
                             .  Total Overall Spending: Displays the total amount spent.
                             .  Spending Over Time: Gives a monthly breakdown of expenses, visualized with charts.
-3. Delete Expenses: Users can review and remove any incorrect or unnecessary entries.
-4. Data Persistence: Expenses are saved to a CSV file, allowing data to be retrieved even after restarting the application.
+   
+4. Delete Expenses: Users can review and remove any incorrect or unnecessary entries.
+5. Data Persistence: Expenses are saved to a CSV file, allowing data to be retrieved even after restarting the application.
    
 # Bonus Feature:
 Visualization: Monthly spending data is represented graphically using Matplotlib, helping users get a clear picture of their financial habits.
