@@ -27,19 +27,23 @@ This project is an excellent example of practical Python application, covering f
 1. Imports and File Setup:
    
     .  csv: This module is used to handle reading and writing expense data to a CSV file, ensuring persistence between program runs.
+
     .  datetime: Helps in managing dates, particularly for handling the current date.
+   
     .  os: This module checks if the expense file exists before loading data.
+   
     .  matplotlib.pyplot: Used for visualizing the spending data with plots (for the bonus feature).
+   
     .  EXPENSE_FILE is the name of the file where all expense data will be saved. This file stores expense records in CSV format.
 
-2. Function to Add Expenses :
+3. Function to Add Expenses :
 
    Purpose: This function takes user input for a new expense and saves it to the CSV file.
              . The user enters the amount, category, and date of the expense.
              . If the date is not provided, it defaults to today’s date.
              . The expense is appended (mode 'a') to the CSV file.
    
-3. Function to View Summaries:
+4. Function to View Summaries:
 
    Purpose: This function displays different types of summaries based on user input:
             a. First, it loads all existing expenses using the load_expenses() function.
@@ -48,31 +52,31 @@ This project is an excellent example of practical Python application, covering f
                                             .  Total overall spending.
                                             .  Spending over time (monthly).
    
-4. Loading Expenses from CSV:
+5. Loading Expenses from CSV:
 
    Purpose: This function loads expense data from the CSV file and returns it as a list of dictionaries.
                             .  Each expense is stored as a dictionary with keys: amount, category, and date.
                             .  If the file does not exist, an empty list is returned.
 
-5. Category Summary:
+6. Category Summary:
 
    Purpose: This function calculates and displays the total spending per category.
                      . It iterates over the list of expenses and sums up the amounts for each category.
    
-6. Total Overall Spending:
+7. Total Overall Spending:
 
    Purpose: This function calculates the total spending across all categories and prints the result.
  
-7. Spending Over Time (Monthly):
+8. Spending Over Time (Monthly):
 
    Purpose: This function calculates the total spending for each month and prints the result. It also generates a plot of the monthly spending.
              . It extracts the year and month (YYYY-MM) from the date field to group expenses by month.
    
-8. Plotting Monthly Spending:
+9. Plotting Monthly Spending:
 
    Purpose: This function creates a bar chart of monthly spending using matplotlib. The chart is shown to the user when the summary of spending over time is requested.
     
-9. Delete an Expense:
+10. Delete an Expense:
 
    Purpose: This function allows the user to delete an expense by selecting from a list of current expenses. It deletes the chosen expense and updates the CSV file.
    
